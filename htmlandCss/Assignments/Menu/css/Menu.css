@@ -1,0 +1,41 @@
+body{
+  margin:0px;
+  padding:0px 10px 0px 10px;
+  font-family: monospace;
+}
+.main-container{
+  margin:10px;
+  padding:10px 20px 10px 20px;
+  background-color: #573489;
+}
+.logo{
+  float: left;
+  font-size: 30px;
+  margin:0px;
+  padding-right:20px;
+  display: inline;
+  color: #ffffff;
+  font-weight: 600;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.menu li{
+  display: inline;
+  padding: 20px;
+}
+.singup{
+    float:right;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    padding: 10px 30px 10px 30px;
+    margin: 1px 0px 10px 0px ;
+    font-weight: bold;
+}
+.appLink{
+  float: right;
+  padding: 0px;
+  margin-right: 20px;
+  font-weight: bold;
+}

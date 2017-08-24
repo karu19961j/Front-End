@@ -1,0 +1,43 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.row{
+  margin:0px;
+  padding: 0px;
+}
+.container {
+  height: 100vh;
+  max-height: 100vh;
+  padding: 0px;
+  /*overflow-y: hidden;*/
+}
+.nav-col {
+  background-color: #ABABAB;
+  height: 100vh;
+  max-height: 100vh;
+  padding: 0px;
+}
+.header-container{
+  height: 20vh;
+  max-height: 20vh;
+}
+.header {
+  background-color: #E2E2E2;
+  height: inherit;
+  padding: 0px;
+  margin:0px 0px 0px 10px;
+}
+.content-container{
+  height: 80vh;
+  max-height: 80vh;
+}
+.content {
+  background-color: #E2E2E2;
+  height: inherit;
+  margin:10px 0px 0px 10px;
+  padding: 0px;
+}
+.p-0{
+  padding: 0px;
+}

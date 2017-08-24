@@ -1,0 +1,27 @@
+.main-container {
+  width:90%;
+  margin: 40px auto;
+  border:1px solid #cfcfcf;
+  font-family: 'Roboto';
+}
+.menu a{
+  background: red;
+  color: white;
+  margin:5px;
+}
+/*=== Display: block is addedin menu; ===*/
+.menu.with-block li a{
+  display:block;
+}
+/*=== List items are displayed inline ===*/
+.menu.with-inline li{
+  display: inline;
+}
+/*=== Display: none; ===*/
+.menu.with-none  li{
+  display:none;
+}
+/*==== Display:hidden ===*/
+p.hidden {
+  visibility:hidden;
+}

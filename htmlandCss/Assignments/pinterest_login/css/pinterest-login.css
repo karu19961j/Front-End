@@ -1,0 +1,81 @@
+body{
+  background: url('http://res.cloudinary.com/kpahwa/image/upload/v1500060286/bg1_iunyhj.jpg') fixed;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  font-family: serif;
+}
+.content{
+  background: url('http://res.cloudinary.com/kpahwa/image/upload/v1500060277/center1_jawxsp.jpg') fixed;
+  background-size: cover;
+  padding: 0px;
+  margin: 100px auto;
+  width: 1100px;
+  height: 600px;
+}
+.inner-content{
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  width: 550px;
+  height: inherit;
+  background-color: #e5e5e5;
+}
+.logo{
+  width: 100px;
+  padding: 0px;
+  margin:50px 0px 0px 235px;
+}
+.title{
+  margin: 10px 0px 0px 28px;
+  padding: 0px;
+  text-align: center;
+  color: #484848;
+  font-weight: normal;
+}
+form{
+  margin: 30px 0px 0px 130px;
+  padding: 0px;
+}
+.form-fields{
+  padding: 0px;
+  margin:0px;
+}
+input{
+  height: 30px;
+  width: 310px;
+  padding: 5px;
+  border: 1px solid #d3d3d3;
+}
+.submit-button{
+  color:#ffffff;
+  background-color: #48b271;
+  padding: 10px;
+  width: 322px;
+  border: 1px solid #e5e5e5;
+}
+.submit-button-facebook{
+  margin-top:10px;
+  width: 322px;
+  padding: 10px;
+  border: 1px solid #446ab0;
+  background-color: #446ab0;
+  color: #ffffff;
+}
+.text-between-btn{
+  color: #484848;
+  font-weight: normal;
+  padding: 0px;
+  margin:10px 0px 0px 150px;
+}
+.terms-conditions{
+  padding: 0px;
+  width: 350px;
+  color: #b3b3b3;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 20px 0px 0px 130px;
+}
+strong{
+  color:#747474;
+}

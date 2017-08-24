@@ -1,0 +1,51 @@
+body{
+  margin:0px;
+  padding: 0px;
+  background: url('../imgs/bg-2.jpg') fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar{
+  background-color: inherit;
+  border:0px;
+  margin:1% 0%;
+}
+/*#test{
+  height: 20vh;
+}*/
+#logo{
+  color:#ffffff;
+  }
+#search,#right-nav-content,#right-nav-content1,#dropdown,#dropdown-content{
+  color:#A6B6CA;
+  margin:0px;
+}
+#right-nav-content1{
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  padding:10px 20px;
+  margin-top:5%;
+}
+.heading, .lorem-lipsum{
+  color:#ffffff;
+  font-weight: lighter;
+}
+#text-content{
+  padding:20% 0px 0px 5%;
+}
+#lorem{
+  margin:2% 0px;
+}
+#content_btn , #content_btn:hover{
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  padding:10px 20px;
+  margin-top:5%;
+  color:#ffffff;
+  font-weight: lighter;
+  text-decoration: none;
+}
+.container-fluid{
+  width: 90%;
+}
