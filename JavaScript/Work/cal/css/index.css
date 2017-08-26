@@ -1,0 +1,30 @@
+body,.row{
+  margin:0px;
+  padding:0px
+  color:#000;
+  font-weight: bold;
+  overflow-x: hidden;
+}
+.m-t-l{
+  margin:20% 0 0 30%;
+}
+.m-t-50{
+  margin-top: 50px;
+}
+.m-l-100{
+  margin-left: 100px;
+}
+.input-field-css{
+  background-color:#f6f6f6;
+  width: inherit;
+  border-radius: 0px;
+  text-align: center;
+}
+.btn-css{
+  background-color: #000;
+  border-color:#000;
+}
+.btn-css:hover{
+  background-color:rgb(31, 31, 31);
+  border-color:#000;
+}
