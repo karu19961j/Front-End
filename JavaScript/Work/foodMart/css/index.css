@@ -1,0 +1,81 @@
+body,.row,img,.container-fluid,.content-container,.header-img{
+  margin:0px;
+  padding:0px;
+}
+.navbar-default{
+  position: fixed;
+  width: inherit;
+  z-index: 1;
+}
+.m-top-10px{
+  margin-top:10px;
+}
+.m-top-bottom-30px{
+  margin:30px 0px;
+  padding:0px;
+}
+a,a:hover{
+  text-decoration: none;
+  color:#000;
+}
+.header-img{
+  background: url('../imgs/header.jpg')center;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+}
+.logo{
+  font-family: 'Cedarville Cursive', cursive;
+  color:#fff;
+  position: absolute;
+  top: 160px;
+  left:390px;
+  font-size: 140px;
+  border: 10px double #fff;
+}
+.navbar{
+  background: #000;
+  border-radius: 0px;
+  border: 0px;
+}
+.search-box .search-bar{
+  width: 700px;
+}
+.submit-btn,.submit-btn:hover{
+  background: none;
+  color:#fff;
+  border:0px;
+}
+.content-container{
+  padding:10px;
+  text-align: center;
+  margin-top:15px;
+}
+.filter-section,.res-card{
+  background: #fff;
+  margin-left:10px;
+
+}
+.heading{
+  border-bottom: 3px solid #d4d3ca;
+}
+.menu-pic{
+  width: 240px;
+  height: 140px;
+}
+.restaurant{
+  margin-top:20px;
+  background-color: #fff;
+  padding:0px;
+  box-shadow: 2px 2px 20px 0 black ;
+  transition: all .2s ease-in-out;
+}
+.restaurant:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 0 #000;
+}
+.res-img{
+  margin:0px;
+  padding:0px;
+  background: red;
+}

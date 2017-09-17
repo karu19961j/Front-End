@@ -1,0 +1,44 @@
+body{
+  margin:0px;
+  padding:0px;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      }
+    to {
+      opacity: 1;
+     }
+  }
+@keyframes dropDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(97vh);
+  }
+}
+.disclaimer{
+  font-family: 'Indie Flower', cursive;
+  color:#000;
+  background-color: #fff;
+  text-align: center;
+  border: 3px dotted #000;
+  animation: fadeIn 10s;
+  margin:200px 0 0 375px;
+}
+.small-text{
+  font-size: 30px;
+  font-weight: 100;
+}
+.lets-start-btn,.lets-start-btn:visited,.lets-start-btn:hover,.lets-start-btn:focus{
+  background-color: inherit;
+  color:inherit;
+  border:1px solid #000;
+}
+
+.my-box{
+  background: rgb(151, 149, 157);
+  height:20px;
+  display: none;
+}
