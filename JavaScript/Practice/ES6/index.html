@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test ES6</title>
+  <script type="text/javascript">
+  //window.print()
+  // let cases = function (a){
+  //   //console.log(a)
+  //   let newRent;
+  //   function taxIncrease(rent, rate) {
+  //       // console.log(rent + " " +rate)
+  //       let tax = rent*(rate/100)
+  //       let newValue = rent + tax
+  //       return newValue
+  //     }
+  //     //console.log(taxIncrease(10000, 5))
+  //   switch(a){
+  //     case "1":
+  //       // window.location = "http://www.google.com"
+  //       newRent = taxIncrease(10000, 5)
+  //       console.log(newRent)
+  //       break;
+  //     case "2":
+  //       newRent = taxIncrease(10000, 10)
+  //       console.log(newRent)
+  //       break;
+  //     case "3":
+  //       newRent = taxIncrease(10000, 30)
+  //       console.log(newRent)
+  //       break;
+  //     default:
+  //       newRent = taxIncrease(10000, 30)
+  //       console.log(newRent)
+  //   }
+  // }
+  // //let a = prompt("Enter value of case")
+  // cases(a)
+  // function blurTest(){
+  //   console.log("Blured")
+  // }
+  // function focusTest(){
+  //   console.log("Focused")
+  // }
+  // //
+  // // function clickTest(){
+  // //   console.log("Clicked")
+  // // }
+  // function mouseOverTest(){
+  //   console.log("MOUSEEEEEEE")
+  // }
+  // function mouseOutTest(){
+  //   console.log("mouseee outttt")
+  // }
+  function changeTest(){
+    let name = document.getElementById("name").value
+    //console.log(name)
+    let re = new RegExp("^[a-z]{5}[.][0-9]+abc$")
+    let result = name.match(re)
+    console.log(result)
+   }
+
+  </script>
+</head>
+<body>
+  <p>Hello</p>
+<form>
+  <table>
+    <tr>
+      <td><input type="text" placeholder="Name" onChange="changeTest()" id="name"></td>
+      <td><input type="text" name="" value="" placeholder="Email" ></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="" value="" placeholder="Password"></td>
+      <td><input type="submit"></td>
+    </tr>
+  </table>
+
+</form>
+</body>
+</html>

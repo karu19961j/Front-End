@@ -1,0 +1,13 @@
+body{
+  background-color: #000;
+}
+.form-container{
+  color:#fff;
+  width:50%;
+  margin:20% 45%;
+}
+.title{
+  margin:15% 40%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 120px;
+}

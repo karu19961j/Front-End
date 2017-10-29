@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="session.css">
+  <title>Cookies</title>
+  <script>
+    function cookiesCreate(){
+      let logIn = document.getElementById("login").value
+      let password = document.getElementById("password").value
+      localStorage.setItem("name",logIn);
+      localStorage.setItem("password",password);
+      console.log(localStorage.getItem("name"))
+      console.log(localStorage.getItem("password"))
+      window.location = "loginEnter.html"
+
+  }
+  function checking(){
+    if(localStorage.getItem("name") != "" && localStorage.getItem("password") != ""){
+      console.log("Helllooasohgosiahgoiahi")
+      window.location = "loginEnter.html"
+  }
+  }
+  </script>
+</head>
+<body onLoad="checking()">
+<div class="container">
+<div class="row">
+  <div class="col s12 form-container">
+    <h1>Login Form</h1>
+    <form>
+      <input type="text" placeholder="LogIn Id" id="login">
+      <input type="password" placeholder="Password" id="password">
+      <input type="button" class="waves-effect waves-light btn" value="Submit" onclick="cookiesCreate()">
+    </form>
+  </div>
+</div>
+</div>
+</body>
+</html>
