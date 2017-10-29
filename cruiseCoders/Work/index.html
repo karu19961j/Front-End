@@ -14,7 +14,27 @@
   </style>
   <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
+<body onLoad="checkLogin()">
+<div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Login</h4>
+      <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Username" id="username" type="text" class="validate">
+        </div>
+        <div class="input-field col s6">
+          <input id="password" type="password" class="validate" placeholder="password">
+        </div>
+      </div>
+    </form>
+  </div>
+    </div>
+    <div class="modal-footer">
+      <button href="#!" class="waves-effect waves-green modal-action modal-close btn-flat" onClick="login()">Login</button>
+    </div>
+</div>
 <section class="header">
   <a id="home"></a>
   <div class="row">
@@ -26,7 +46,7 @@
       <li><a href="#tech">Technologies</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact-me">Contact</a></li>
-      <li><button class="waves-effect waves-light btn">Login</button></li>
+      <li><a class="btn-flatbtn modal-trigger" href="#modal1" id="login-text">LOGIN</a></li>
     </ul>
 </nav>
 </div>
@@ -231,5 +251,12 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script>
+$(document).ready(function(){
+  // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+  $('.modal').modal();
+});
+</script>
+<script src="js/index.js" charset="utf-8"></script>
 </body>
 </html>
