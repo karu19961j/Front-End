@@ -1,0 +1,82 @@
+.dropdown-content {
+  background-color: #000; }
+
+nav {
+  background-color: #000;
+  box-shadow: none;
+  padding: 0 10px; }
+  nav ul {
+    float: right; }
+    nav ul .btn {
+      background-color: rgba(0, 0, 0, 0);
+      box-shadow: none;
+      border: 0px;
+      padding: 0 0 0 5px;
+      font-style: normal; }
+      nav ul .btn:hover {
+        background-color: #000;
+        border: 0px;
+        box-shadow: none;
+        color: gray; }
+        nav ul .btn:hover::before {
+          content: "";
+          border-left: 3px solid red;
+          margin: 10px; }
+    nav ul a:hover {
+      color: gray;
+      box-shadow: none; }
+      nav ul a:hover::before {
+        content: "";
+        border-left: 3px solid #93FF33;
+        margin: 10px; }
+
+.tag_line {
+  font-size: 150px;
+  font-family: "Poiret One", cursive;
+  color: #cdffcd; }
+
+.tag_line--1 {
+  font-size: 120px;
+  font-family: "Poiret One", cursive;
+  color: #ffc966; }
+
+.tag_line--2 {
+  font-size: 100px;
+  font-family: "Poiret One", cursive; }
+
+.about-us {
+  background-color: #fff; }
+
+.features {
+  background-color: #fcfcfc; }
+
+.our-service {
+  background-color: #f0f0f0; }
+  .our-service h6 {
+    font-size: 20px;
+    text-align: center; }
+
+.tabs {
+  background-color: #f0f0f0; }
+
+.sub-heading {
+  text-align: center; }
+
+.footer-list {
+  margin-top: 20%; }
+  .footer-list li {
+    margin: 10px 0; }
+
+.heading {
+  text-align: center;
+  font-family: "Alegreya Sans SC", sans-serif; }
+  .heading::before {
+    content: "";
+    border-left: 3px solid #93FF33;
+    margin: 10px; }
+
+.content {
+  font-family: "Josefin Slab", serif;
+  font-size: 20px; }
+
+/*# sourceMappingURL=base.css.map */

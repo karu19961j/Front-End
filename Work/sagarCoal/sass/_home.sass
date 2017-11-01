@@ -1,0 +1,45 @@
+body
+  font-family: 'Roboto', sans-serif
+  color: $text-color
+  // background: #ECE9E6
+  // background: -webkit-linear-gradient(to right, #ECE9E6, #FFFFFF)
+  // background: linear-gradient(to right, #ECE9E6, #FFFFFF)
+  background: $bg-color
+.header
+  // background: url('../imgs/header.jpg') no-repeat center center
+  // -webkit-background-size: cover
+  // -moz-background-size: cover
+  // -o-background-size: cover
+  // background-size: cover
+  // position: relative
+  background: $bg-color
+  h1
+    color: lighten(red,15)
+    margin-top: 10%
+    font-weight: lighter
+    font-size: 135px
+    font-family: 'Roboto', sans-serif
+    text-align: center
+  .input-field
+    color: $text-color
+  .btn
+    background-color: red
+    color: $text-color
+
+nav
+  background: $bg-color
+  a:hover
+    color: lighten(red,15)
+
+//about-us
+.heading
+  text-align: center
+  &::before
+    content: ""
+    border-left: 3px solid lighten(red,15)
+    margin-right: 10px
+
+//products
+.slider .slides
+  height: 0
+  background: none

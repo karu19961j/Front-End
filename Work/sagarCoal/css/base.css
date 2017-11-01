@@ -1,0 +1,53 @@
+.m-top-10 {
+  margin-top: 10%; }
+
+.btn {
+  background: linear-gradient(#232526, #414345); }
+  .btn:hover {
+    background: linear-gradient(#232526, #414345); }
+
+.card {
+  background: linear-gradient(#232526, #414345); }
+  .card .card-title {
+    color: linear-gradient(#232526, #414345); }
+
+.page-footer {
+  background: linear-gradient(#232526, #414345); }
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background: linear-gradient(#232526, #414345); }
+
+.header {
+  background: linear-gradient(#232526, #414345); }
+  .header h1 {
+    color: #ff4d4d;
+    margin-top: 10%;
+    font-weight: lighter;
+    font-size: 135px;
+    font-family: "Roboto", sans-serif;
+    text-align: center; }
+  .header .input-field {
+    color: #fff; }
+  .header .btn {
+    background-color: red;
+    color: #fff; }
+
+nav {
+  background: linear-gradient(#232526, #414345); }
+  nav a:hover {
+    color: #ff4d4d; }
+
+.heading {
+  text-align: center; }
+  .heading::before {
+    content: "";
+    border-left: 3px solid #ff4d4d;
+    margin-right: 10px; }
+
+.slider .slides {
+  height: 0;
+  background: none; }
+
+/*# sourceMappingURL=base.css.map */
