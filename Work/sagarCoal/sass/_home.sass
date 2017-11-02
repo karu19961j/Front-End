@@ -5,6 +5,8 @@ body
   // background: -webkit-linear-gradient(to right, #ECE9E6, #FFFFFF)
   // background: linear-gradient(to right, #ECE9E6, #FFFFFF)
   background: $bg-color
+
+
 .header
   // background: url('../imgs/header.jpg') no-repeat center center
   // -webkit-background-size: cover
@@ -12,12 +14,12 @@ body
   // -o-background-size: cover
   // background-size: cover
   // position: relative
-  background: $bg-color
+  background: none
   h1
     color: lighten(red,15)
     margin-top: 10%
     font-weight: lighter
-    font-size: 135px
+    font-size: 6em
     font-family: 'Roboto', sans-serif
     text-align: center
   .input-field
@@ -25,6 +27,10 @@ body
   .btn
     background-color: red
     color: $text-color
+
+.above-header-content
+  position: relative
+  top: -10px
 
 nav
   background: $bg-color
@@ -43,3 +49,7 @@ nav
 .slider .slides
   height: 0
   background: none
+
+//footer
+.page-footer
+  background: $bg-color

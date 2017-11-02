@@ -2,30 +2,30 @@
   margin-top: 10%; }
 
 .btn {
-  background: linear-gradient(#232526, #414345); }
+  background: #000; }
   .btn:hover {
-    background: linear-gradient(#232526, #414345); }
+    background: #000; }
 
 .card {
-  background: linear-gradient(#232526, #414345); }
+  background: #000; }
   .card .card-title {
-    color: linear-gradient(#232526, #414345); }
+    color: #000; }
 
 .page-footer {
-  background: linear-gradient(#232526, #414345); }
+  background: #000; }
 
 body {
   font-family: "Roboto", sans-serif;
   color: #fff;
-  background: linear-gradient(#232526, #414345); }
+  background: #000; }
 
 .header {
-  background: linear-gradient(#232526, #414345); }
+  background: none; }
   .header h1 {
     color: #ff4d4d;
     margin-top: 10%;
     font-weight: lighter;
-    font-size: 135px;
+    font-size: 6em;
     font-family: "Roboto", sans-serif;
     text-align: center; }
   .header .input-field {
@@ -34,8 +34,12 @@ body {
     background-color: red;
     color: #fff; }
 
+.above-header-content {
+  position: relative;
+  top: -10px; }
+
 nav {
-  background: linear-gradient(#232526, #414345); }
+  background: #000; }
   nav a:hover {
     color: #ff4d4d; }
 
@@ -49,5 +53,30 @@ nav {
 .slider .slides {
   height: 0;
   background: none; }
+
+.page-footer {
+  background: #000; }
+
+body {
+  background: #000;
+  font-family: "Roboto", sans-serif; }
+
+.left_col-company {
+  border-right: 1px solid #fff;
+  height: 100vh; }
+  .left_col-company h1 {
+    color: #ff4d4d;
+    margin: 55% 0;
+    font-weight: lighter;
+    font-size: 3em;
+    text-align: center; }
+
+.back-button {
+  position: relative;
+  left: -50%;
+  color: #fff;
+  font-size: 4em; }
+  .back-button:hover {
+    color: #ff4d4d; }
 
 /*# sourceMappingURL=base.css.map */
