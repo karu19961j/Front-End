@@ -54,8 +54,18 @@ nav {
   height: 0;
   background: none; }
 
-.page-footer {
-  background: #000; }
+.footer {
+  background-color: #000;
+  text-align: center; }
+  .footer a {
+    text-decoration: none;
+    color: #fff; }
+    .footer a:hover {
+      color: #ff4d4d; }
+
+.footer-logo {
+  color: #ff4d4d;
+  margin: 22% 0 0 25%; }
 
 body {
   background: #000;
