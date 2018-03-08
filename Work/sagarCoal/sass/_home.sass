@@ -6,7 +6,13 @@ body
   // background: linear-gradient(to right, #ECE9E6, #FFFFFF)
   background: $bg-color
 
-
+.nav-wrapper
+  img
+      margin: 20px 15%
+      max-width: 10%
+      height: auto
+  ul
+    margin: 3% 0
 .header
   // background: url('../imgs/header.jpg') no-repeat center center
   // -webkit-background-size: cover
@@ -15,6 +21,7 @@ body
   // background-size: cover
   // position: relative
   background: none
+
   h1
     color: lighten(red,15)
     margin-top: 10%
@@ -49,6 +56,8 @@ nav
 .slider .slides
   height: 0
   background: none
+  a:hover
+    color:  lighten(red,15)
 
 //footer
 .footer
@@ -57,8 +66,17 @@ nav
   a
     text-decoration: none
     color: $text-color
+    font-size: 15px
     &:hover
       color: lighten(red,15)
+.bottom-link
+  a
+    border: 1px solid lighten(red,15)
+    padding: 5px
+    border-radius: 10px
+    &:hover
+      color: lighten(red,15)
+
 
 .footer-logo
   color: lighten(red,15)

@@ -1,0 +1,659 @@
+@font-face {
+  font-family: 'Suisse';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Suisse BP Intl Regular'), url('fonts/Suisse BP Intl Regular.otf') format('otf');
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family:  'Montserrat', 'Nunito Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #000;
+    background-color: #fff;
+    overflow-x:hidden;
+
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.no-padding{
+    padding:0;
+}
+.bg-transp {
+    background: transparent;
+}
+.bg-light-grey {
+    background: #f5f5f5;
+}
+.pos-relative {
+    position: relative;
+}
+.align-center {
+    margin-left: auto;
+    margin-right:auto;
+}
+.pad-75 {
+    padding-top:75px;
+    padding-bottom:75px;
+}
+.mar-t-10 {
+    margin-top: 10px;
+}
+.mar-t-20 {
+    margin-top: 20px;
+}
+.mar-t-30 {
+    margin-top: 30px;
+}
+.mar-t-50 {
+    margin-top: 50px;
+}
+.font {
+    font-family:  'Montserrat', 'Nunito Sans', "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.navbar-custom {
+    margin-bottom: 4px;
+    border-bottom: 1px solid rgba(0,0,0,.35);
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 5px 0;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    background: 0 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+.nav-box-shadow {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.29);
+}
+.navbar-brand>img {
+    display: block;
+    height: 40px;
+}
+
+.navbar-nav>li {
+    margin-right:15px;
+    font-size: 1em;
+}
+.navbar-nav.navbar-right>li>a {
+    color:#808080;
+    font-size:0.9em;
+    text-transform: none;
+}
+.navbar-nav li.rest-name span {
+    display: block;
+    font-size: 0.7em;
+    text-align: center;
+    color: #808080;
+    text-transform: uppercase;
+}
+.navbar-nav li.rest-name {
+    margin-right:200px;
+    font-size: 1.3em;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    color: #f04f4e;
+    background: transparent;
+}
+.navbar-nav.navbar-right>li>a:hover {
+    background: transparent;
+}
+.change-zip-code {
+    width: 302px;
+    padding: 15px 20px;
+}
+.__no-radius {
+    border-radius: 0;
+}
+.dropdown-menu>li>a {
+    padding:8px 20px;
+}
+.dropdown-menu>li>a>i {
+    margin-right: 10px;
+}
+.menu-list {
+    font-family:  'Montserrat', 'Nunito Sans', "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-bottom: 0;
+}
+
+.menu-list.navbar-default .navbar-nav>.active>a,.menu-list.navbar-default .navbar-nav>.active>a:focus,.menu-list.navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: transparent;
+    position: relative;
+}
+.menu-list.navbar-default .navbar-nav>.active>a::after, .menu-list.navbar-default .navbar-nav>.active>a:focus::after,.menu-list.navbar-default .navbar-nav>.active>a:hover::after {
+    position: absolute;
+    bottom:0;
+    height: 3px;
+    width: 74%;
+    left: 12%;
+    background: #f65150;
+    content: '';
+}
+.btn-cart {
+    padding: 0px 0px;
+}
+.nav>li.btn-cart> a {
+    padding: 15px 10px;
+    font-size: 1.3em;
+}
+/*-- Input Search is used in Restaurant listing page ---*/
+.__input-search {
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #e5e5e5;
+    border-radius: 0;
+    padding: 5px 5px 5px 30px;
+}
+.__input-search:focus {
+    box-shadow: none;
+    border-color: #2f2f2f;
+}
+.search-box i {
+    position: absolute;
+    top: 20px;
+    color: #6d6d6d;
+}
+.menu-container {
+    padding-top:30px;
+    background: #f9f9f9;
+}
+.menu-title {
+     padding-left:10px;
+     font-weight: 600;
+}
+/*-----
+Menu Card 
+menu item for restaurants | Used in creating restaurant cards as well
+ ----*/
+.menu-card {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(100,100,100,0.15);
+      -webkit-transition:all 0.5s ease;
+    transition:all 0.5s ease;
+}
+.menu-card:hover {
+    box-shadow: 2px 2px 8px rgba(100,100,100,0.25);
+      -webkit-transition:all 0.5s ease;
+    transition:all 0.5s ease;
+}
+.menu-card:hover .menu-card__img img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition:all 0.5s ease;
+    transition:all 0.5s ease;
+}
+.menu-card .menu-card__img {
+    overflow: hidden;
+    position: relative;
+}
+.menu-card .menu-card__img img{
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    z-index: 5;
+     -webkit-transition:all 0.5s ease;
+    transition:all 0.5s ease;
+}    
+.menu-card__selected {
+    position: absolute;
+    background: rgba(13, 169, 147, 0.56);
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 30% 32%;
+    text-align: center;
+        z-index: 10;
+}
+.menu-card__selected h1 {
+    font-size: 4em;
+}
+.menu-card .menu-card__item {
+    background: #fff;
+    padding:10px 20px 20px;
+    position: relative;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+}
+.menu-card .__name {
+    font-weight: 500;
+    color: #373838;
+    font-size: 1.25em;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.menu-card .__extra-info {
+    font-size: 0.9em;
+    color: #888;
+}
+.menu-card .__price {
+    margin-top: 12px;
+    color: #333;
+    font-size: 1.25em;
+}
+
+/*=== 
+Restaurant Card 
+Inherited from Menu Cards
+===*/
+
+.menu-card--rest .menu-card__img {
+    height: 200px;
+}
+.menu-card--rest .__extra-info {
+    font-size: 1em;
+}
+.menu-card--rest .__rating {
+    color: #424242;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.menu-card--rest .__rating i{
+    color: #FFD700;
+    margin-right: 5px;
+}
+.menu-card--rest .__delivery-time {
+    margin-right: 5px;
+    color: #848484;
+    font-size: 1.1em;
+}
+.menu-card--rest .__delivery-time i {
+    margin-right: 5px;
+}
+.menu-card__selected.__selected--rest {
+    padding: 25% 32%;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.47);
+}
+.menu-card--rest .abs-extra-info{
+    position: absolute;
+    padding: 2px 14px;
+    z-index: 9;
+}
+.abs-extra-info.__open-time {
+    right:0;
+    top:10px;
+    background: #fff;
+}
+.abs-extra-info.__pre-order {
+    right:0;
+    bottom: 12px;
+    background: #f35655;
+    box-shadow: -2px 0px 15px rgba(0,0,0,0.3);
+    color: #fff;
+}
+a.btn-add-to-cart {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    font-size: 1.3em;
+    border: 2px solid #f65150;
+    color: #f65150;
+    padding: 0px 8px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+a.btn-add-to-cart span {
+    display: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+a.btn-add-to-cart:hover span{
+    display: inline;
+}
+/*--- Food Cart Sidebar ---*/
+.ui.sidebar {
+    background: #fff;
+}
+#sidebar {
+    padding:10px 0;
+    height:100vh;
+    font-family: ' Nunito Sans', "Helvetica Neue",Helvetica,Arial;
+}
+#sidebar .cart-top-sec {
+    position: fixed;
+    width: 100%;
+}
+#sidebar hr {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#btn-cart-close {
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    color: #989898;
+    font-size: 1.1em;
+}
+.cart-items .__item {
+    border-bottom: 1px solid #ececec;
+    padding: 10px 0;
+}
+.cart-items .__item.col-md-3 {
+    padding-right:0;
+}
+.cart-items .__item .item-details {
+    padding:0 5px;
+}
+.cart-items .__item .item-image {
+    width: 100%;
+    overflow: hidden;
+}
+.cart-items .__item .item-image img{
+    height:45px;
+}
+.cart-items .__item h5 {
+    font-size:1.1em;
+    margin:0 0 10px;
+}
+.cart-items .__item .btn-cart, .topping-modal .btn-cart  {
+    padding: 0px 7px;
+    background: transparent;
+    border: 1px solid #b7b7b7;
+    color: #444;
+    border-radius: 1px;
+    font-weight: 600;
+}
+.btn-in-cart span {
+    border-top:1px solid #b7b7b7;
+    border-bottom:1px solid #b7b7b7;
+    padding: 2px 5px 2px;
+    position: relative;
+    top: 1px;
+}
+/*--- 
+    Overwriting the button in cart styles for Modal window 
+---*/
+.btn-in-cart.__inside-modal {
+    padding-top:8px;
+}
+.btn-in-cart.__inside-modal span {
+    font-size: 1.4em;
+    padding: 0px 10px 6px;
+}
+.btn-cart.__inside-modal {
+    font-size: 1.5em;
+    padding: 0px 8px;
+}
+ul.billing {
+    padding-left: 0;
+    list-style-type: none;
+}
+ul.billing li {
+    margin-top: 5px;
+}
+.btn-checkout {
+    width: 100%;
+    background: #e85826;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 10px 10px;
+    margin-top:5px;  
+}
+#sidebar .cart-items {
+    height:calc(100% - 166px);
+    overflow: auto;
+    margin-top: 42px;
+}
+#sidebar .place-order {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    bottom:10px;
+    padding-top: 8px;
+    border-top: 1px solid #e5e5e5;
+}
+.btn-mobile-checkout {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 5px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 700;
+    background: #f55756;
+    color: #fff;
+    z-index: 99;
+    cursor: pointer;
+}
+.btn-mobile-checkout span {
+    position: relative;
+    left: 15px;
+    background: #fff;
+    color: #000;
+    height: 10px;
+    width: 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.cart-items::-webkit-scrollbar {
+    width: 8px;
+    display: none;
+}
+.cart-items:hover::-webkit-scrollbar {
+   display: block;
+}
+.cart-items::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+}
+.cart-items::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+        background: rgba(0,0,0,0.25);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4); 
+}
+
+/*----- 
+Menu Extra Topping 
+----------*/
+.topping-modal .__add-extra-toppings ul{
+    padding:1px 20px;
+    list-style: none;
+}
+.topping-modal .modal-header {
+    padding:0;
+}
+.topping-modal button.close span {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 2.5em;
+    color: #0e0e0e;
+    z-index: 999;
+}
+.topping-modal .__image-holder {
+    max-height: 225px;
+    overflow: hidden;
+}
+.topping-modal .__image-holder img {
+    width: 100%;
+}
+.topping-modal .__details h1 {
+    font-size: 2em;
+    margin: 10px 15px;
+}
+.topping-modal .__details p {
+    margin-left: 15px;
+    color: #888;
+}
+.topping-modal .__add-extra-toppings {
+    border-top: 1px solid #e5e5e5;
+}  
+.topping-modal .__add-extra-toppings h4 {
+    padding-left:20px;
+}
+.topping-modal .__add-extra-toppings ul li {
+    margin-top: 5px;
+    padding-left:30px;
+}
+.__add-extra-toppings input[type="radio"], .__add-extra-toppings input[type="checkbox"] {
+    display: none;
+}
+
+.__add-extra-toppings input[type="radio"] + label, .__add-extra-toppings input[type="checkbox"] + label {
+        color: #3e3e3e;
+        cursor: pointer;
+        position: relative;
+        font-weight: 400;
+ }       
+
+.__add-extra-toppings input[type="radio"] + label::before {
+    content:'';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -30px;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid #e5e5e5;
+    cursor:pointer;
+}
+
+.__add-extra-toppings input[type="radio"]:checked + label::before {
+    height: 20px;
+    width: 20px;
+    background: #08d276;
+    box-shadow: inset 0 0 0 2px #fff;
+ } 
+
+ .__add-extra-toppings input[type="checkbox"] + label::before {
+    content:'';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -30px;
+    background: transparent;
+    border: 2px solid #e5e5e5;
+    cursor:pointer;
+}
+
+.__add-extra-toppings input[type="checkbox"]:checked + label::before {
+    content: '\2713';
+    font-size: 1.2em;
+    padding: 0px 2px;
+    color: #19c376;
+ }   
+/*---- Footer ----*/
+footer {
+    padding: 10px 0; 
+    border-top: 1px solid #e0e0e0;
+}
+footer .footer-links {
+    width: 240px;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+footer .footer-links li {
+    font-size: 1.05em;
+    list-style: none;
+    margin-top: 3px;
+}
+footer .footer-links li a {
+    color: #AFAFAF;
+}
+footer .footer-social-links li {
+    float:left;
+    margin-right: 25px;
+    font-size: 1.2em;
+}
+footer .footer-social-links li a {
+    color: #666;
+}
+footer p.copyright-text {
+    padding-left:10px;
+    color:#AFAFAF;
+    padding-left: 25px;
+}
+@media (min-width: 1201px) {
+    .container {
+        width: 1200px;
+    }
+    .pusher.dimmed .container {
+        width: 100%;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+    .navbar-nav li.rest-name {
+        margin-right:130px;
+    }
+}  
+
+/*------ Profile Page ----*/
+.profile--img {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.profile--img img {
+    width: 100%;
+}
+.profile--details h1 {
+    font-size: 1.3em;
+}
+.profile--details h4 {
+    font-size: 1em;
+}
+/*-- Inherited from sidebar cart items --*/
+.cart-items.prev-order .__item .item-image img {
+    height:80px; 
+}
+.cart-items.prev-order .__item .item-details p {
+    margin-bottom:5px;
+    font-size:1em;
+}
+.cart-items.prev-order .__item .item-details p.order-id {
+    font-size: 0.9em;
+    color: #777;
+}
+.prev-order .__item{
+    padding: 15px 0;
+}
+
+
+.side-panel {
+    background: #fff;
+    padding: 20px 25px;
+}
+
+@media(max-width: 767px) {
+ .sm-no-padding {
+    padding:0;
+ }   
+ .btn-mobile-checkout {
+    display: block;
+ }
+ .navbar-nav li.rest-name {
+    margin-right: 0;
+    text-align: center;
+ }
+ .btn-cart {
+    display: none;
+ }
+}
+  
+

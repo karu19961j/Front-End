@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title> Restaurants </title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/all.css" type="text/css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+</head>
+<body>
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="false">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content login-modal align-center font">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="__details text-center">
+					<h4> Login to your account </h4>
+					<form action="">
+						<input type="text" class="form-control __input-form mar-t-20" placeholder="Email">
+						<input type="password" class="form-control __input-form  mar-t-20" placeholder="Password">
+						<button type="submit" class="form-control __input-form btn-main  mar-t-20"> Login </button>
+					</form>
+					<div class="or __or-dark align-center mar-t-20">OR </div>
+					<button class="btn btn-facebook mar-t-10"><i class="fa fa-facebook" aria-hidden="true"></i> Login with Facebook</button>
+					<hr>
+					<h4>Not a member yet?</h4>
+					<p class="text-lg-grey"> Join Bring8 and order from more <br> than 15,000 restaurants</p>
+					<a class="btn btn-signup" id="openSignupModal">Sign Up</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="false">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content login-modal align-center font">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="__details text-center">
+					<h4> Register with Bring8 </h4>
+					<form action="">
+						<input type="text" class="form-control __input-form mar-t-20" placeholder="Name">
+						<input type="text" class="form-control __input-form mar-t-20" placeholder="Email">
+						<input type="text" class="form-control __input-form mar-t-20" placeholder="Phone Number">
+						<input type="password" class="form-control __input-form  mar-t-20" placeholder="Password">
+						<button type="submit" class="form-control __input-form btn-main  mar-t-20"> Register </button>
+					</form>
+					<div class="or __or-dark align-center mar-t-20">OR </div>
+					<button class="btn btn-facebook mar-t-10"><i class="fa fa-facebook" aria-hidden="true"></i> Login with Facebook</button>
+					<hr>
+					<h4>Already a member?</h4>
+					<p class="text-lg-grey"> Login now and start tracking your order </p>
+					<a href="#" class="btn btn-signup" id="openLoginModal">Login</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<nav class="navbar navbar-custom" role="navigation">
+	<div class="container topnav">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+				<i class="fa fa-bars"></i>
+			</button>
+			<a class="navbar-brand topnav" href="/"> <img src="img/logo.png" alt="Bring8 logo"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li> <a href="#" data-toggle="modal" data-target="#loginModal"> Login </a> </li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="home-header">
+	<div class="bg-layer"></div>
+	<div class="__mid-content">
+		<h1 class="title align-center"> Fresh, healthy, and delicious delivered at your door step </h1>
+		<form action="/demo/restaurants" class="enter-zip-form mar-t-30 align-center">
+			<div class="col-md-5 col-sm-5 no-padding">
+				<input type="text" class="form-control __input-form" placeholder="Email">
+			</div>
+			<div class="col-md-3 col-sm-3 sm-no-padding">
+				<input type="text" class="form-control __input-form" placeholder="Zip Code">
+			</div>
+			<div class="col-md-4 col-sm-4 no-padding">
+				<button type="submit" class="form-control __input-form btn-main"> Find Restaurants </button>
+			</div>
+			<div class="clearfix"></div>
+		</form>
+		<div class="__bottom-content align-center text-center">
+			<div class="or align-center mar-t-20">OR </div>
+			<button class="btn btn-facebook mar-t-10"><i class="fa fa-facebook" aria-hidden="true"></i> Login with Facebook</button>
+			<p class="mar-t-20"> By clicking “Find Restaurants” or “Continue with Facebook”  you agree to our Terms & Conditions.</p>
+		</div>
+	</div>
+</div>
+<section class="sec-content pad-75">
+	<div class="container">
+		<h2 class="sec-title align-center text-center"> How it works, <span>from your favorite restaurant, <br> delivered to your door </span></h2>
+		<div class="col-md-12 col-xs-12 col-md-offset-0 col-xs-offset-0">
+			<div class="col-md-4">
+				<div class="feature">
+					<div class="__img"> <img src="img/icons/rest.png"> </div>
+					<div class="__name"> Select Restaurant </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="feature">
+					<div class="__img"> <img src="img/icons/ordering.png"> </div>
+					<div class="__name"> Ordering </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="feature">
+					<div class="__img"> <img src="img/icons/delivery.png"> </div>
+					<div class="__name"> Delivery </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="sec-content sec-fast-delivery">
+	<div class="__mid-content">
+		<h2><i class="fa fa-clock-o" aria-hidden="true"></i> Switzerland fastest delivery</h2>
+	</div>
+</section>
+<section class="sec-content pad-75">
+	<div class="container">
+		<div class="col-md-6 text-center">
+			<img src="img/icons/iphone-mockup.png">
+		</div>
+		<div class="col-md-6 text-center pad-75">
+			<img src="img/Logo.png">
+			<h3 class="mar-t-50"> Download and Order on your App </h3>
+			<div class="col-md-6 mar-t-50">
+				<a href="#" class="btn btn-app-download"> <i class="fa fa-apple"></i> <span class="small">Download on the</span> <span class="big">App Store</span> </a>
+			</div>
+			<div class="col-md-6 mar-t-50">
+				<a href="#" class="btn btn-app-download"> <i class="fa fa-play"></i> <span class="small">Get it on</span> <span class="big">Google Play</span> </a>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</section>
+
+<footer>
+	<div class="footer container font">
+		<div class="col-md-2 col-sm-4 col-xs-12 mar-t-20">
+			<ul class="footer-links">
+				<h4 class="__title"> Contact </h4>
+				<li><a href="#"> Contact Us </a></li>
+				<li><a href="#"> About Bring8 </a></li>
+				<li><a href="@"> Careers </a></li>
+			</ul>
+		</div>
+		<div class="col-md-2 col-sm-4 col-xs-12  mar-t-20">
+			<ul class="footer-links footer-social-links">
+				<h4 class="__title"> Find us on</h4>
+				<li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12 mar-t-20">
+			<ul class="footer-links">
+				<h4 class="__title"> Useful Links </h4>
+				<li><a href="#">Restaurant Login </a></li>
+				<li><a href="#"> Partnerships </a></li>
+				<li><a href="#"> Mobile Apps</a></li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+		<hr>
+		<p class="copyright-text"> Copyright &copy; Azerm </p>
+	</div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

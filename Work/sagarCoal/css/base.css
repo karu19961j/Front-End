@@ -19,6 +19,13 @@ body {
   color: #fff;
   background: #000; }
 
+.nav-wrapper img {
+  margin: 20px 15%;
+  max-width: 10%;
+  height: auto; }
+.nav-wrapper ul {
+  margin: 3% 0; }
+
 .header {
   background: none; }
   .header h1 {
@@ -53,15 +60,25 @@ nav {
 .slider .slides {
   height: 0;
   background: none; }
+  .slider .slides a:hover {
+    color: #ff4d4d; }
 
 .footer {
   background-color: #000;
   text-align: center; }
   .footer a {
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    font-size: 15px; }
     .footer a:hover {
       color: #ff4d4d; }
+
+.bottom-link a {
+  border: 1px solid #ff4d4d;
+  padding: 5px;
+  border-radius: 10px; }
+  .bottom-link a:hover {
+    color: #ff4d4d; }
 
 .footer-logo {
   color: #ff4d4d;
